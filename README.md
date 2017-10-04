@@ -172,7 +172,7 @@ Below is an example of a configuration file, which defines two Appenders, one fo
 
 ## Use LogLogic appenders with Log4j 2 (2.x)
 
-Adding xxx.jar in the classpath of your application.
+Adding lmi-logging-1.0.jar in the classpath of your application.
 
 ### Configuration
 
