@@ -1,6 +1,6 @@
-#LogLogic Java Logging Toolkit
-##Using the LogLogic Java logging extensions
-###Introduction
+# LogLogic Java Logging Toolkit
+## Using the LogLogic Java logging extensions
+### Introduction
 
 LogLogic Java logging extension supports the following logging backend:
 
@@ -11,7 +11,7 @@ LogLogic Java logging extension supports the following logging backend:
 
 LogLogic Java logging extension requires at least Java 7.
 
-###Choosing between TCP or ULDP transport
+### Choosing between TCP or ULDP transport
   
 Many logging framework are provided with a UDP Syslog implementation, which suffers some shortcomings for deployment in enterprise systems.
 
@@ -30,7 +30,7 @@ Messages>65k    |No          |Yes         |Yes
 Acknowledgement of processing of the messages by receiver | No | No | Yes
 Supports TLS encryption of connection|No|Yes|Yes
 
-###Properties of the LogLogic appenders
+### Properties of the LogLogic appenders
 
 Property Name|Default Value|Type|Syslog/TCP|Syslog/ULDP
 -------------|-------------|-------|----------|------------
@@ -67,11 +67,11 @@ characters. An example certificate fingerprint is:
 
 
 
-##Use LogLogic appender with Java logging framework
+## Use LogLogic appender with Java logging framework
 
 Adding lmi-logging-1.0.jar in the classpath of your application.
 
-###Configuration
+### Configuration
 
 Set the JVM property `java.util.logging.config.file` to point to the configuration file.
 
@@ -130,11 +130,11 @@ com.tibco.loglogic.logging.handlers.jdk.UldpHandler.formatter= java.util.logging
 java.util.logging.SimpleFormatter.format = "%1$F %1$r %4$s: %6$s"
 ````
 
-##Use LogLogic appenders with Log4j (1.x)
+## Use LogLogic appenders with Log4j (1.x)
 
 Adding lmi-logging-1.0.jar in the classpath of your application.
 
-###Configuration
+### Configuration
 
 By default, the LogManager looks for a file named `log4j.xml` in the CLASSPATH.
 
@@ -170,11 +170,11 @@ Below is an example of a configuration file, which defines two Appenders, one fo
 </log4j:configuration>
 ````
 
-##Use LogLogic appenders with Log4j 2 (2.x)
+## Use LogLogic appenders with Log4j 2 (2.x)
 
 Adding xxx.jar in the classpath of your application.
 
-###Configuration
+### Configuration
 
 Log4j will inspect log4j.configurationFile system property to determine log4j2 configuration file. Log4j configuration can be written in JSON, YAML and XML
 
@@ -216,11 +216,11 @@ Below is an example of an XML configuration file, which defines two Appenders, o
 </Configuration>
 ````
 
-##Using LogLogic appenders with logback
+## Using LogLogic appenders with logback
 
 Adding lmi-logging-1.0.jar in the classpath of your application.
 
-###Configuration
+### Configuration
 
 1. Logback tries to find a file called `logback-test.xml` in the classpath.
 1. If no such file is found, logback tries to find a file called `logback.groovy` in the classpath.
@@ -261,7 +261,7 @@ Below is an example of a configuration file, which defines two Appenders, one fo
 </configuration>
 ````
 
-##Using the LmiLogEvent class
+## Using the LmiLogEvent class
 
 The toolkit also provide a helper class to generate well-formatted log messages, using a pre-defined set of properties that advanced parsers in LMI natively understands.
 
