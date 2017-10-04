@@ -69,7 +69,7 @@ characters. An example certificate fingerprint is:
 
 ## Use LogLogic appender with Java logging framework
 
-Adding lmi-logging-1.0.jar in the classpath of your application.
+Adding loglmi-appender-1.0.0.jar in the classpath of your application.
 
 ### Configuration
 
@@ -132,7 +132,7 @@ java.util.logging.SimpleFormatter.format = "%1$F %1$r %4$s: %6$s"
 
 ## Use LogLogic appenders with Log4j (1.x)
 
-Adding lmi-logging-1.0.jar in the classpath of your application.
+Adding loglmi-appender-1.0.0.jar in the classpath of your application.
 
 ### Configuration
 
@@ -172,7 +172,7 @@ Below is an example of a configuration file, which defines two Appenders, one fo
 
 ## Use LogLogic appenders with Log4j 2 (2.x)
 
-Adding lmi-logging-1.0.jar in the classpath of your application.
+Adding loglmi-appender-1.0.0.jar in the classpath of your application.
 
 ### Configuration
 
@@ -218,7 +218,7 @@ Below is an example of an XML configuration file, which defines two Appenders, o
 
 ## Using LogLogic appenders with logback
 
-Adding lmi-logging-1.0.jar in the classpath of your application.
+Adding loglmi-appender-1.0.0.jar in the classpath of your application.
 
 ### Configuration
 
