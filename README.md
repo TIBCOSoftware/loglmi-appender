@@ -65,7 +65,9 @@ algorithm. The length of a SHA-1 hash is 20 bytes and the length of the correspo
 characters. An example certificate fingerprint is:
 `sha-1:E1:2D:53:2B:7C:6B:8A:29:A2:76:C8:64:36:0B:08:4B:7A:F1:9E:9D`
 
-
+**Note on best practice for appName field:**
+We recommend you use a compound value for the appName field, that contains a protuct type and an app-name separated by an hyphen: `<productType>-<applicationName>`. This helps creating data model that are generic for a given product, while keeping the notion of
+the application name available for further refinement.
 
 ## Use LogLogic appender with Java logging framework
 
