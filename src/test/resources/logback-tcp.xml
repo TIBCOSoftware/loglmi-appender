@@ -1,0 +1,16 @@
+<configuration>
+    <appender name="loglogic" class="com.tibco.loglogic.logging.appenders.logback.SyslogTcpAppender">
+        <host>127.0.0.1</host>
+        <Port>514</Port>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>[%thread] %level: %msg</pattern>
+        </layout>
+        <source>MyMachineForSyslog</source>
+        <appName>MyAppNameForSyslog</appName>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="loglogic"/>
+    </root>
+
+</configuration>

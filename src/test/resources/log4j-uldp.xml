@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration>
+
+    <appender name="LoglogicUldp" class="com.tibco.loglogic.logging.appenders.log4j.UldpAppender">
+        <param name="host" value="localhost"/>
+        <param name="port" value="5516"/>
+        <param name="appName" value="MyAppNameForUldp"/>
+        <param name="source" value="MyMachineForUldp"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%-5p %c{1} - %m"/>
+        </layout>
+    </appender>
+
+    <root>
+        <level value="INFO" />
+        <appender-ref ref="LoglogicUldp" />
+    </root>
+
+</log4j:configuration>

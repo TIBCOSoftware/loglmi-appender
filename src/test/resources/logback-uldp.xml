@@ -1,0 +1,17 @@
+<configuration>
+
+    <appender name="uldp" class="com.tibco.loglogic.logging.appenders.logback.UldpAppender">
+        <host>127.0.0.1</host>
+        <Port>5516</Port>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>[%thread] %level: %msg</pattern>
+        </layout>
+        <source>MyMachineForUldp</source>
+        <appName>MyAppNameForUldp</appName>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="uldp"/>
+    </root>
+
+</configuration>
