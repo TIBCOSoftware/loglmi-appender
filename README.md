@@ -17,7 +17,7 @@ Many logging framework are provided with a UDP Syslog implementation, which suff
 
 The appenders provided by LogLogic overcome those limitations, using two protocols. 
 
-The standard Syslog over TCP (RFC 6587, RFC 5425), which works with LogLogic LMI and is interoperable with other applications supporting the syslog framework.
+The standard Syslog over TCP (RFC 6587, RFC 5425), which works with LogLogic Log Management Intelligence (LMI) and is interoperable with other applications supporting the syslog framework.
 This protocol uses a reliable transport, can support any message length that the receiver can accept, and can be optionally secured by a TLS encapsulation.
 
 Also provided is an appender for Syslog/ULDP. ULDP is a protocol created by LogLogic to add some additional reliability to the exchange of log messages: the receiving end is sending periodic acknowledgements of messages received once they are processed properly. Messages sent and not yet acknowledged are put in a memory buffer, when the buffer is full forwarding is paused until an acknowledgement is received (this situation happens if the receiving end cannot cope well with the pace at which events are sent).
