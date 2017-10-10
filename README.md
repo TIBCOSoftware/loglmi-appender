@@ -1,5 +1,6 @@
-# LogLogic Java Logging Toolkit
-## Using the LogLogic Java logging extensions
+Copyright © 2017. TIBCO Software Inc.
+# TIBCO LogLogic® Java Logging Toolkit
+## Using the LogLogic® Java logging extensions
 ### Introduction
 
 LogLogic Java logging extension supports the following logging backend:
@@ -15,9 +16,9 @@ LogLogic Java logging extension requires at least Java 7.
   
 Many logging framework are provided with a UDP Syslog implementation, which suffers some shortcomings for deployment in enterprise systems.
 
-The appenders provided by LogLogic overcome those limitations, using two protocols. 
+The appenders provided by TIBCO LogLogic® Log Management Intelligence (LMI) overcome those limitations, using two protocols. 
 
-The standard Syslog over TCP (RFC 6587, RFC 5425), which works with LogLogic Log Management Intelligence (LMI) and is interoperable with other applications supporting the syslog framework.
+The standard Syslog over TCP (RFC 6587, RFC 5425), which works with LogLogic® LMI and is interoperable with other applications supporting the syslog framework.
 This protocol uses a reliable transport, can support any message length that the receiver can accept, and can be optionally secured by a TLS encapsulation.
 
 Also provided is an appender for Syslog/ULDP. ULDP is a protocol created by LogLogic to add some additional reliability to the exchange of log messages: the receiving end is sending periodic acknowledgements of messages received once they are processed properly. Messages sent and not yet acknowledged are put in a memory buffer, when the buffer is full forwarding is paused until an acknowledgement is received (this situation happens if the receiving end cannot cope well with the pace at which events are sent).
@@ -265,9 +266,9 @@ Below is an example of a configuration file, which defines two Appenders, one fo
 
 ## Using the LmiLogEvent class
 
-The toolkit also provide a helper class to generate well-formatted log messages, using a pre-defined set of properties that advanced parsers in LMI natively understands.
+The toolkit also provides a helper class to generate well-formatted log messages, using a pre-defined set of properties that the LogLogic LMI advanced parsers natively understand.
 
-Logs are easier to query and act upon with correlation rules and reports if they share a common set of properties. The LogLogic LogLab team has came up with a pre-defined set of properties that suits a broad range of log messages from various kinds of product. This is however extensible to suit your own needs, so you can define your own attributes.
+Logs are easier to query and act upon with correlation rules and reports if they share a common set of properties. The LogLogic team has come up with a pre-defined set of properties that suits a broad range of log messages from various kinds of product. This is extensible to suit your own needs, so you can define your own attributes.
 
 We recommend that each log message is associated with an eventName and eventId that will help quickly extract the semantic of each log.
 
