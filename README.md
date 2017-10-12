@@ -12,6 +12,8 @@ LogLogic logging extension for Java supports the following logging backend:
 
 LogLogic logging extension for Java requires at least Java 7.
 
+This works with any Log Management Intelligence version. Also, use LSP 33 and above if using application strings.
+
 ### Choosing between TCP or ULDP transport
   
 Many logging framework are provided with a UDP Syslog implementation, which suffers some shortcomings for deployment in enterprise systems.
