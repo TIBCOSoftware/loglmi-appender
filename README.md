@@ -1,16 +1,16 @@
 Copyright © 2017. TIBCO Software Inc.
-# TIBCO LogLogic® Java Logging Toolkit
-## Using the LogLogic® Java logging extensions
+# TIBCO LogLogic® Logging Toolkit for Java
+## Using the LogLogic® logging extensions for Java
 ### Introduction
 
-LogLogic Java logging extension supports the following logging backend:
+LogLogic logging extension for Java supports the following logging backend:
 
 * Java JDK Logging framework
 * Log4j (1.x)
 * Log4j 2 (2.x)
 * Logback
 
-LogLogic Java logging extension requires at least Java 7.
+LogLogic logging extension for Java requires at least Java 7.
 
 ### Choosing between TCP or ULDP transport
   
