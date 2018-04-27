@@ -55,7 +55,7 @@ public class LmiLogEventTest {
         lmiLogEvent = new LmiLogEvent( "TestEvent", "E003" );
         lmiLogEvent.addThrowable( new RuntimeException( "This is a dummy one" ) );
 
-        String expected = "ll_eventName=\"TestEvent\" ll_eventID=\"E003\" exceptionClass=\"java.lang.RuntimeException\" exceptionMessage=\"This is a dummy one\" stackTraceElement=\"com.tibco.loglogic.logging.forwarders.LmiLogEventTest.test(LmiLogEventTest.java:51)";
+        String expected = "ll_eventName=\"TestEvent\" ll_eventID=\"E003\" exceptionClass=\"java.lang.RuntimeException\" exceptionMessage=\"This is a dummy one\" stackTraceElement=\"com.tibco.loglogic.logging.forwarders.LmiLogEventTest.test(LmiLogEventTest.java:56)";
 
         assertEquals( expected, lmiLogEvent.toString().substring( 0, expected.length() ) );
 
